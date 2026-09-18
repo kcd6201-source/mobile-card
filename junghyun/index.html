@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>김정현 대리 | 일룸 롯데메종동부산점</title>
   <meta name="description" content="김정현 대리 | 일룸 롯데메종동부산점">
 
@@ -50,16 +49,28 @@
     .brand-divider { width:1px; height:24px; background:#d6d3cd; }
     .store-name { color:#555; font-size:13px; font-weight:500; white-space:nowrap; }
 
-    .hero { padding:0 14px; }
-    .hero-image { width:100%; height:auto; display:block; border-radius:var(--radius); }
+    .hero {
+      padding:18px 14px 0;
+      text-align:center;
+    }
+    .hero-image {
+      width:80%;
+      height:auto;
+      display:inline-block;
+      border-radius:var(--radius);
+    }
 
-    .profile { padding:28px 24px 30px; }
+    .profile { padding:24px 24px 30px; text-align:center; }
     .name { margin:0; font-size:30px; line-height:1.15; font-weight:760; letter-spacing:-.05em; }
     .position { margin-left:7px; color:var(--sub); font-size:18px; font-weight:500; }
-    .tagline { margin-top:15px; color:#555; font-size:14px; line-height:1.7; font-weight:400; white-space:nowrap; }
+    .tagline {
+      margin-top:15px; color:#555; font-size:14px; line-height:1.7; font-weight:400;
+      word-break:keep-all;
+    }
 
     .actions {
-      display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:22px;
+      display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:22px auto 0;
+      width:100%;
     }
     .action {
       min-height:46px; display:flex; align-items:center; justify-content:center;
@@ -93,6 +104,7 @@
       line-height:1.7;
       font-weight:400;
       letter-spacing:-.02em;
+      word-break:keep-all;
     }
 
     .career-list { margin-top:24px; }
@@ -156,6 +168,44 @@
     }
     .image-slot + .image-slot { margin-top:14px; }
     .image-slot img { width:100%; height:100%; object-fit:cover; display:block; }
+
+    .image-slot.map-slot {
+      aspect-ratio:auto;
+      height:auto;
+      background:#fff;
+    }
+    .image-slot.map-slot img {
+      width:100%;
+      height:auto;
+      object-fit:contain;
+      display:block;
+    }
+
+    .media-section {
+      padding:30px 24px 0;
+      border-top:1px solid var(--line);
+    }
+    .media-section + .media-section {
+      border-top:0;
+      padding-top:28px;
+    }
+    .media-label {
+      margin-bottom:10px;
+      color:var(--red);
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:.14em;
+    }
+    .media-title {
+      margin:0 0 18px;
+      font-size:20px;
+      line-height:1.4;
+      letter-spacing:-.04em;
+      font-weight:700;
+    }
+    .media-section:last-of-type {
+      padding-bottom:34px;
+    }
 
     .links {
       padding:2px 24px 34px;
@@ -255,7 +305,7 @@
   <section class="section">
     <div class="section-label">CONSULTING</div>
     <h2 class="section-title">3D SCT 도면화 · 가구 배치 상담</h2>
-    <p class="section-copy">도면 이미지와 배치 이미지를 이 영역에 넣어 테스트할 수 있습니다.</p>
+    <p class="section-copy">실제 상담을 바탕으로 제작한 렌더링 이미지입니다.</p>
     <div class="consult-scroll">
       <div class="consult-card"><img src="consult01.jpg" alt="평면도 예시"></div>
       <div class="consult-card"><img src="consult02.jpg" alt="3D 도면화 예시"></div>
@@ -263,9 +313,16 @@
     </div>
   </section>
 
-  <section class="image-area">
-    <div class="image-slot"><img src="../image01.jpg" alt="공용 이미지 1"></div>
-    <div class="image-slot"><img src="../image02.jpg" alt="공용 이미지 2"></div>
+  <section class="media-section">
+    <div class="media-label">STORE GUIDE</div>
+    <h2 class="media-title">매장 안내</h2>
+    <div class="image-slot"><img src="../image02.jpg" alt="매장 안내"></div>
+  </section>
+
+  <section class="media-section">
+    <div class="media-label">LOCATION</div>
+    <h2 class="media-title">매장 약도</h2>
+    <div class="image-slot map-slot"><img src="../image01.jpg" alt="매장 약도"></div>
   </section>
 
   <nav class="links">
