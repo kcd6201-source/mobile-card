@@ -114,17 +114,26 @@
     .year { font-size:24px; line-height:1; font-weight:700; letter-spacing:-.05em; }
     .record { font-size:14px; line-height:1.55; font-weight:600; }
 
-    .consult-grid {
-      display:grid;
-      grid-template-columns:1fr;
+    .consult-scroll {
+      display:flex;
       gap:12px;
       margin-top:22px;
+      overflow-x:auto;
+      padding-bottom:6px;
+      scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch;
+      scrollbar-width:none;
+    }
+    .consult-scroll::-webkit-scrollbar {
+      display:none;
     }
     .consult-card {
+      flex:0 0 88%;
       overflow:hidden;
       border:1px solid var(--line);
       border-radius:18px;
       background:var(--soft);
+      scroll-snap-align:start;
     }
     .consult-card img {
       width:100%;
@@ -247,7 +256,7 @@
     <div class="section-label">CONSULTING</div>
     <h2 class="section-title">3D SCT 도면화 · 가구 배치 상담</h2>
     <p class="section-copy">도면 이미지와 배치 이미지를 이 영역에 넣어 테스트할 수 있습니다.</p>
-    <div class="consult-grid">
+    <div class="consult-scroll">
       <div class="consult-card"><img src="consult01.jpg" alt="평면도 예시"></div>
       <div class="consult-card"><img src="consult02.jpg" alt="3D 도면화 예시"></div>
       <div class="consult-card"><img src="consult03.jpg" alt="가구 배치 예시"></div>
