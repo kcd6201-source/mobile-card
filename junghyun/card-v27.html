@@ -728,23 +728,45 @@
     .actions .action-kakao .action-type { font-size:15px; line-height:1.2; font-weight:800; }
     .actions .action .action-number,
     .actions .action-kakao .action-sub { font-size:12px; line-height:1.2; font-weight:600; letter-spacing:0; }
+
+    /* v33 signature: no left photo; centered full-width copy with consistent proportions. */
+    .highlights-section .signature-visual {
+      display:flex !important; flex-direction:column; align-items:center;
+      justify-content:center; box-sizing:border-box; text-align:center;
+      padding:28px 18px 26px !important; min-height:118px;
+      line-height:1.45 !important; background:#fff !important;
+      margin:0 -24px !important; width:calc(100% + 48px) !important;
+    }
+    .highlights-section .signature-visual .signature-copy-line {
+      display:block; margin:0; color:#193c35; font-weight:400;
+      letter-spacing:-.045em; line-height:1.45; font-size:clamp(15px, 4vw, 22px);
+      word-break:keep-all; overflow-wrap:break-word;
+    }
+    .highlights-section .signature-visual .signature-copy-line.signature-copy-strong {
+      font-weight:800; font-size:clamp(20px, 5.35vw, 30px);
+    }
+    @media(max-width:359px){
+      .highlights-section .signature-visual {padding:22px 15px 20px !important;}
+      .highlights-section .signature-visual .signature-copy-line {font-size:14px;}
+      .highlights-section .signature-visual .signature-copy-line.signature-copy-strong {font-size:19px;}
+    }
   </style>
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="김정현 대리 | 일룸 롯데메종동부산점">
   <meta property="og:description" content="고객님의 이야기를 듣고, 생활에 맞는 공간을 함께 완성하겠습니다.">
   <meta property="og:url" content="https://kcd6201-source.github.io/mobile-card/junghyun/card-v27.html">
-  <meta property="og:image" content="https://kcd6201-source.github.io/mobile-card/junghyun/preview-v31.jpg">
-  <meta property="og:image:secure_url" content="https://kcd6201-source.github.io/mobile-card/junghyun/preview-v31.jpg">
+  <meta property="og:image" content="https://kcd6201-source.github.io/mobile-card/junghyun/preview-v33.jpg">
+  <meta property="og:image:secure_url" content="https://kcd6201-source.github.io/mobile-card/junghyun/preview-v33.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <link rel="image_src" href="https://kcd6201-source.github.io/mobile-card/junghyun/preview-v31.jpg">
-  <meta itemprop="image" content="https://kcd6201-source.github.io/mobile-card/junghyun/preview-v31.jpg">
+  <link rel="image_src" href="https://kcd6201-source.github.io/mobile-card/junghyun/preview-v33.jpg">
+  <meta itemprop="image" content="https://kcd6201-source.github.io/mobile-card/junghyun/preview-v33.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="김정현 대리 | 일룸 롯데메종동부산점">
   <meta name="twitter:description" content="고객님의 이야기를 듣고, 생활에 맞는 공간을 함께 완성하겠습니다.">
-  <meta name="twitter:image" content="https://kcd6201-source.github.io/mobile-card/junghyun/preview-v31.jpg">
+  <meta name="twitter:image" content="https://kcd6201-source.github.io/mobile-card/junghyun/preview-v33.jpg">
 
 </head>
 
@@ -843,8 +865,10 @@
 
   <section class="section highlights-section">
     <h2 class="section-label signature-heading">MY SIGNATURE</h2>
-    <div class="signature-visual">
-      <img src="signature.webp" alt="김정현 대리 시그니처: 고객 상담부터 공간 설계, 서비스 기획까지 아우르는 공간 컨설턴트" loading="lazy" decoding="async" width="1200" height="330">
+    <div class="signature-visual" role="group" aria-label="시그니처 소개">
+      <p class="signature-copy-line">고객 상담부터 공간 설계,</p>
+      <p class="signature-copy-line">서비스 기획까지 아우르는</p>
+      <p class="signature-copy-line signature-copy-strong">공간 컨설턴트</p>
     </div>
     <div class="highlight-list">
       <div class="highlight-item">
