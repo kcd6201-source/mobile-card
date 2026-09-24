@@ -753,7 +753,7 @@
       .highlights-section .signature-visual .signature-copy-line.signature-copy-strong {font-size:19px;}
     }
 
-    /* v35: mobile-readable signature; existing section-title font size, olive emphasis. */
+    /* v37: match the existing .section-title typography exactly; red emphasis only. */
     .highlights-section .signature-heading { margin-bottom:8px !important; }
     .highlights-section .signature-visual {
       min-height:0 !important; padding:0 24px 16px !important;
@@ -761,12 +761,12 @@
     }
     .highlights-section .signature-visual .signature-copy-line {
       font-size:21px !important; line-height:1.4 !important;
-      color:#363636 !important; font-weight:500 !important;
-      letter-spacing:-.045em; text-align:center;
+      color:var(--text) !important; font-weight:700 !important;
+      letter-spacing:-.04em; text-align:center;
       max-width:100%; overflow-wrap:break-word; word-break:keep-all;
     }
     .highlights-section .signature-visual .signature-copy-line.signature-copy-strong {
-      font-size:21px !important; font-weight:850 !important; color:var(--red) !important;
+      font-size:21px !important; font-weight:700 !important; color:var(--red) !important;
     }
     /* v35: two columns x two rows: personal calls and texts, then store and Kakao. */
     .profile .actions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
