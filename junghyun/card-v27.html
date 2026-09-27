@@ -820,7 +820,7 @@
     .benefit-section .benefit-v45-list { display:flex; flex-direction:column; gap:10px; width:100%; margin:0; background:#fff; }
     .benefit-section .benefit-v45-row { display:grid; grid-template-columns:40% 60%; align-items:center; width:100%; gap:0; background:#fff; }
     .benefit-section .benefit-v45-words { display:block; width:100%; height:auto; object-fit:contain; background:transparent; }
-    .benefit-section .benefit-v45-photo { display:block; width:100%; height:auto; aspect-ratio:590/179; object-fit:cover; border-radius:13px; }
+    .benefit-section .benefit-v45-photo { display:block; width:100%; height:auto; aspect-ratio:590/179; object-fit:contain; border-radius:13px; background:transparent; }
     .benefit-section .benefit-contact-image.benefit-v45-contact {
       margin:13px 0 0 !important; padding:10px 9px !important; width:100% !important;
       box-sizing:border-box; display:grid; grid-template-columns:26% minmax(0,1fr); align-items:center;
@@ -833,6 +833,11 @@
     .benefit-section .benefit-v45-contact-number { margin-top:5px; font-size:clamp(14px,4vw,19px); font-weight:800; line-height:1.25; letter-spacing:-.055em; color:#ac111b; white-space:nowrap; }
     @media(max-width:350px){ .benefit-section .benefit-v45-contact-number { font-size:13px; } .benefit-section .benefit-v45-contact-title { font-size:9px; } }
 
+  
+    /* v46 patch: shared store-contact button */
+    .profile .actions .action-store { background:var(--red) !important; border-color:var(--red) !important; color:#fff !important; }
+    .profile .actions .action-store .action-type,
+    .profile .actions .action-store .action-number { color:#fff !important; }
   </style>
 
   <meta property="og:type" content="website">
