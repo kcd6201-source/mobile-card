@@ -815,7 +815,14 @@
     .benefit-section .benefit-image-wrap,
     .benefit-section .benefit-contact-image { background:#fff !important; }
     .benefit-section .benefit-contact-image { margin-top:12px !important; }
-  </style>
+  
+    /* v42: seven independent full-width horizontal rows, stacked vertically. */
+    .benefit-section .benefit-vertical-rows { display:flex; flex-direction:column; gap:10px; width:100%; background:#fff; }
+    .benefit-section .benefit-vertical-rows img { display:block; width:100%; height:auto; object-fit:contain; border-radius:12px; }
+    .benefit-section .benefit-contact-image { margin-top:12px; width:100%; background:#fff; }
+    .benefit-section .benefit-contact-image img { display:block; width:100%; height:auto; object-fit:contain; }
+    
+</style>
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="김정현 대리 | 일룸 롯데메종동부산점">
@@ -988,8 +995,14 @@
   <section class="media-section benefit-section">
     <div class="media-label">BENEFIT</div>
     <h2 class="media-title">동부산점만의 혜택</h2>
-    <div class="benefit-image-wrap">
-      <img src="../assets/benefits.webp?v=40" alt="동부산점 혜택 7종" loading="lazy" decoding="async" width="1109" height="1508">
+    <div class="benefit-vertical-rows">
+      <img src="../assets/benefit-row-1.webp?v=42" alt="롯데 상품권" loading="lazy" decoding="async" width="1109" height="215">
+      <img src="../assets/benefit-row-2.webp?v=42" alt="국민관광 상품권" loading="lazy" decoding="async" width="1109" height="215">
+      <img src="../assets/benefit-row-3.webp?v=42" alt="주유 상품권" loading="lazy" decoding="async" width="1109" height="215">
+      <img src="../assets/benefit-row-4.webp?v=42" alt="엘포인트" loading="lazy" decoding="async" width="1109" height="215">
+      <img src="../assets/benefit-row-5.webp?v=42" alt="MVG" loading="lazy" decoding="async" width="1109" height="215">
+      <img src="../assets/benefit-row-6.webp?v=42" alt="세금계산서" loading="lazy" decoding="async" width="1109" height="215">
+      <img src="../assets/benefit-row-7.webp?v=42" alt="최대 6개월 무이자" loading="lazy" decoding="async" width="1109" height="218">
     </div>
     <div class="benefit-contact-image">
       <a href="tel:0519012355" aria-label="매장 문의 051-901-2355, 전화 걸기">
