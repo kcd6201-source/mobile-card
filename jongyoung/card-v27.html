@@ -816,12 +816,17 @@
     .benefit-section .benefit-contact-image { background:#fff !important; }
     .benefit-section .benefit-contact-image { margin-top:12px !important; }
   
-    /* v42: seven independent full-width horizontal rows, stacked vertically. */
-    .benefit-section .benefit-vertical-rows { display:flex; flex-direction:column; gap:10px; width:100%; background:#fff; }
-    .benefit-section .benefit-vertical-rows img { display:block; width:100%; height:auto; object-fit:contain; border-radius:12px; }
-    .benefit-section .benefit-contact-image { margin-top:12px; width:100%; background:#fff; }
+    /* v43 preview: one benefit per full-width horizontal row, seven rows vertically. */
+    .benefit-section .benefit-image-wrap { margin:0 !important; width:100% !important; overflow:visible; border-radius:0; background:#fff; }
+    .benefit-rows-v43 { display:flex; flex-direction:column; gap:12px; width:100%; }
+    .benefit-row-v43 { display:grid; grid-template-columns:minmax(0, 38%) minmax(0, 62%); align-items:center; gap:4px; min-height:78px; background:#fff; }
+    .benefit-copy-v43 { display:flex; flex-direction:column; min-width:0; padding-right:2px; line-height:1.28; }
+    .benefit-copy-v43 strong { color:#b91618; font-size:16px; font-weight:800; word-break:keep-all; }
+    .benefit-copy-v43 span { color:#444; font-size:13px; margin-top:3px; }
+    .benefit-row-v43 img { display:block; width:100%; max-height:96px; height:auto; object-fit:contain; object-position:center; }
+    .benefit-section .benefit-contact-image { margin:15px 0 0 !important; width:100% !important; }
     .benefit-section .benefit-contact-image img { display:block; width:100%; height:auto; object-fit:contain; }
-    
+
 </style>
 
   <meta property="og:type" content="website">
@@ -996,15 +1001,15 @@
   <section class="media-section benefit-section">
     <div class="media-label">BENEFIT</div>
     <h2 class="media-title">동부산점만의 혜택</h2>
-    <div class="benefit-vertical-rows">
-      <img src="../assets/benefit-row-1.webp?v=42" alt="롯데 상품권" loading="lazy" decoding="async" width="1109" height="215">
-      <img src="../assets/benefit-row-2.webp?v=42" alt="국민관광 상품권" loading="lazy" decoding="async" width="1109" height="215">
-      <img src="../assets/benefit-row-3.webp?v=42" alt="주유 상품권" loading="lazy" decoding="async" width="1109" height="215">
-      <img src="../assets/benefit-row-4.webp?v=42" alt="엘포인트" loading="lazy" decoding="async" width="1109" height="215">
-      <img src="../assets/benefit-row-5.webp?v=42" alt="MVG" loading="lazy" decoding="async" width="1109" height="215">
-      <img src="../assets/benefit-row-6.webp?v=42" alt="세금계산서" loading="lazy" decoding="async" width="1109" height="215">
-      <img src="../assets/benefit-row-7.webp?v=42" alt="최대 6개월 무이자" loading="lazy" decoding="async" width="1109" height="218">
-    </div>
+    <div class="benefit-image-wrap"><div class="benefit-rows-v43">
+      <div class="benefit-row-v43"><div class="benefit-copy-v43"><strong>롯데 상품권</strong><span>사용 가능</span></div><img src="../assets/benefit-lotte-v43.webp" alt="롯데 상품권 이미지" loading="lazy" decoding="async"></div>
+      <div class="benefit-row-v43"><div class="benefit-copy-v43"><strong>국민관광 상품권</strong><span>사용 가능</span></div><img src="../assets/benefit-tourism-v43.webp" alt="국민관광 상품권 이미지" loading="lazy" decoding="async"></div>
+      <div class="benefit-row-v43"><div class="benefit-copy-v43"><strong>주유 상품권</strong><span>사용 가능</span></div><img src="../assets/benefit-fuel-v43.webp" alt="주유 상품권 이미지" loading="lazy" decoding="async"></div>
+      <div class="benefit-row-v43"><div class="benefit-copy-v43"><strong>엘포인트</strong><span>적립 및 사용</span></div><img src="../assets/benefit-lpoint-v43.webp" alt="엘포인트 이미지" loading="lazy" decoding="async"></div>
+      <div class="benefit-row-v43"><div class="benefit-copy-v43"><strong>MVG</strong><span>100% 적립</span></div><img src="../assets/benefit-mvg-v43.webp" alt="MVG 이미지" loading="lazy" decoding="async"></div>
+      <div class="benefit-row-v43"><div class="benefit-copy-v43"><strong>세금계산서</strong><span>발행 가능</span></div><img src="../assets/benefit-tax-v43.webp" alt="세금계산서 이미지" loading="lazy" decoding="async"></div>
+      <div class="benefit-row-v43"><div class="benefit-copy-v43"><strong>최대 6개월</strong><span>무이자 할부</span></div><img src="../assets/benefit-installments-v43.webp" alt="최대 6개월 이미지" loading="lazy" decoding="async"></div>
+</div></div>
     <div class="benefit-contact-image">
       <a href="tel:0519012355" aria-label="매장 문의 051-901-2355, 전화 걸기">
         <img src="../assets/contact-banner.webp?v=40" alt="전화·문자 상담 및 주문·결제 가능. 매장 문의 051-901-2355" loading="lazy" decoding="async" width="2508" height="627">
