@@ -843,7 +843,14 @@
     .benefit-v45-row:nth-child(3) .benefit-v45-photo {
       object-fit:contain !important; background:transparent !important;
     }
-  </style>
+  
+    /* v49: benefit infographic + separate contact banner */
+    .benefit-section .benefit-image-wrap { margin:0 -24px; width:calc(100% + 48px); background:#fff; line-height:0; }
+    .benefit-section .benefit-image-wrap img { display:block; width:100%; height:auto; object-fit:contain; }
+    .benefit-section .benefit-v49-contact { margin:12px -24px 0 !important; width:calc(100% + 48px); background:#fff !important; line-height:0; }
+    .benefit-section .benefit-v49-contact img { display:block; width:100%; height:auto; object-fit:contain; }
+
+</style>
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="서석배 팀장 | 일룸 롯데메종동부산점">
@@ -1012,42 +1019,11 @@
   <section class="media-section benefit-section">
     <div class="media-label">BENEFIT</div>
     <h2 class="media-title">동부산점만의 혜택</h2>
-    <div class="benefit-v45-list">
-      <div class="benefit-v45-row" aria-label="롯데 상품권 사용 가능">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-01.webp?v=48" alt="롯데 상품권 · 사용 가능" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-01.webp?v=48" alt="롯데 상품권 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
-      </div>
-      <div class="benefit-v45-row" aria-label="국민관광 상품권 사용 가능">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-02.webp?v=48" alt="국민관광 상품권 · 사용 가능" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-02.webp?v=48" alt="국민관광 상품권 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
-      </div>
-      <div class="benefit-v45-row" aria-label="주유 상품권 사용 가능">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-03.webp?v=48" alt="주유 상품권 · 사용 가능" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-03.webp?v=48" alt="주유 상품권 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
-      </div>
-      <div class="benefit-v45-row" aria-label="엘포인트 적립 및 사용">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-04.webp?v=48" alt="엘포인트 · 적립 및 사용" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-04.webp?v=48" alt="엘포인트 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
-      </div>
-      <div class="benefit-v45-row" aria-label="MVG 100% 적립">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-05.webp?v=48" alt="MVG · 100% 적립" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-05.webp?v=48" alt="MVG 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
-      </div>
-      <div class="benefit-v45-row" aria-label="세금계산서 발행 가능">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-06.webp?v=48" alt="세금계산서 · 발행 가능" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-06.webp?v=48" alt="세금계산서 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
-      </div>
-      <div class="benefit-v45-row" aria-label="최대 6개월 무이자 무이자 할부">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-07.webp?v=48" alt="최대 6개월 무이자 · 무이자 할부" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-07.webp?v=48" alt="최대 6개월 무이자 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
-      </div>
+    <div class="benefit-image-wrap" aria-label="동부산점 혜택 안내 이미지">
+      <img src="../assets/benefits.webp?v=49" alt="동부산점 혜택 안내 이미지" loading="lazy" decoding="async" width="948" height="1659">
     </div>
-    <div class="benefit-contact-image benefit-v45-contact" aria-label="매장 전화·문자 상담 및 주문·결제 안내">
-      <img class="benefit-v45-contact-icon" src="../assets/contact-original-icon.webp?v=48" alt="전화와 문자 상담" loading="lazy" decoding="async" width="455" height="340">
-      <div class="benefit-v45-contact-copy">
-        <div class="benefit-v45-contact-title">전화 · 문자 상담 및 주문 · 결제 가능</div>
-        <div class="benefit-v45-contact-number">매장 문의 051-901-2355</div>
-      </div>
+    <div class="benefit-contact-image benefit-v49-contact" aria-label="매장 전화 문자 상담 및 주문 결제 안내 이미지">
+      <img src="../assets/contact-banner.webp?v=49" alt="전화 · 문자 상담 및 주문 · 결제 가능 · 매장 문의 051-901-2355" loading="lazy" decoding="async" width="2172" height="724">
     </div></section>
 
   <section class="section">
