@@ -820,7 +820,7 @@
     .benefit-section .benefit-v45-list { display:flex; flex-direction:column; gap:10px; width:100%; margin:0; background:#fff; }
     .benefit-section .benefit-v45-row { display:grid; grid-template-columns:40% 60%; align-items:center; width:100%; gap:0; background:#fff; }
     .benefit-section .benefit-v45-words { display:block; width:100%; height:auto; object-fit:contain; background:transparent; }
-    .benefit-section .benefit-v45-photo { display:block; width:100%; height:auto; aspect-ratio:590/179; object-fit:contain; border-radius:13px; background:transparent; }
+    .benefit-section .benefit-v45-photo { display:block; width:100%; height:auto; aspect-ratio:590/179; object-fit:cover; border-radius:13px; }
     .benefit-section .benefit-contact-image.benefit-v45-contact {
       margin:13px 0 0 !important; padding:10px 9px !important; width:100% !important;
       box-sizing:border-box; display:grid; grid-template-columns:26% minmax(0,1fr); align-items:center;
@@ -838,6 +838,11 @@
     .profile .actions .action-store { background:var(--red) !important; border-color:var(--red) !important; color:#fff !important; }
     .profile .actions .action-store .action-type,
     .profile .actions .action-store .action-number { color:#fff !important; }
+  
+    /* v48 oil-cutout override: only the oil-voucher image is transparent. */
+    .benefit-v45-row:nth-child(3) .benefit-v45-photo {
+      object-fit:contain !important; background:transparent !important;
+    }
   </style>
 
   <meta property="og:type" content="website">
@@ -963,11 +968,11 @@
     <div class="highlight-list">
       <div class="highlight-item">
         <div class="highlight-key">2024</div>
-        <div class="highlight-value">일룸 전국 판매사원 영업력 인증 평가 <strong class="accent">(전국 2위 수상)</strong></div>
+        <div class="highlight-value">일룸 전국 판매사원 영업력 인증 평가 <strong class="accent">전국 2위 수상</strong></div>
       </div>
       <div class="highlight-item">
         <div class="highlight-key">2023</div>
-        <div class="highlight-value">일룸 전국 판매사원 영업력 인증 평가 <strong class="accent">(전국 2위 수상)</strong></div>
+        <div class="highlight-value">일룸 전국 판매사원 영업력 인증 평가 <strong class="accent">전국 2위 수상</strong></div>
       </div>
     </div>
   </section>
@@ -1009,36 +1014,36 @@
     <h2 class="media-title">동부산점만의 혜택</h2>
     <div class="benefit-v45-list">
       <div class="benefit-v45-row" aria-label="롯데 상품권 사용 가능">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-01.webp?v=45" alt="롯데 상품권 · 사용 가능" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-01.webp?v=45" alt="롯데 상품권 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
+        <img class="benefit-v45-words" src="../assets/benefit-original-text-01.webp?v=48" alt="롯데 상품권 · 사용 가능" loading="lazy" decoding="async" width="359" height="141">
+        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-01.webp?v=48" alt="롯데 상품권 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
       </div>
       <div class="benefit-v45-row" aria-label="국민관광 상품권 사용 가능">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-02.webp?v=45" alt="국민관광 상품권 · 사용 가능" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-02.webp?v=45" alt="국민관광 상품권 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
+        <img class="benefit-v45-words" src="../assets/benefit-original-text-02.webp?v=48" alt="국민관광 상품권 · 사용 가능" loading="lazy" decoding="async" width="359" height="141">
+        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-02.webp?v=48" alt="국민관광 상품권 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
       </div>
       <div class="benefit-v45-row" aria-label="주유 상품권 사용 가능">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-03.webp?v=45" alt="주유 상품권 · 사용 가능" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-03.webp?v=45" alt="주유 상품권 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
+        <img class="benefit-v45-words" src="../assets/benefit-original-text-03.webp?v=48" alt="주유 상품권 · 사용 가능" loading="lazy" decoding="async" width="359" height="141">
+        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-03.webp?v=48" alt="주유 상품권 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
       </div>
       <div class="benefit-v45-row" aria-label="엘포인트 적립 및 사용">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-04.webp?v=45" alt="엘포인트 · 적립 및 사용" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-04.webp?v=45" alt="엘포인트 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
+        <img class="benefit-v45-words" src="../assets/benefit-original-text-04.webp?v=48" alt="엘포인트 · 적립 및 사용" loading="lazy" decoding="async" width="359" height="141">
+        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-04.webp?v=48" alt="엘포인트 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
       </div>
       <div class="benefit-v45-row" aria-label="MVG 100% 적립">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-05.webp?v=45" alt="MVG · 100% 적립" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-05.webp?v=45" alt="MVG 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
+        <img class="benefit-v45-words" src="../assets/benefit-original-text-05.webp?v=48" alt="MVG · 100% 적립" loading="lazy" decoding="async" width="359" height="141">
+        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-05.webp?v=48" alt="MVG 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
       </div>
       <div class="benefit-v45-row" aria-label="세금계산서 발행 가능">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-06.webp?v=45" alt="세금계산서 · 발행 가능" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-06.webp?v=45" alt="세금계산서 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
+        <img class="benefit-v45-words" src="../assets/benefit-original-text-06.webp?v=48" alt="세금계산서 · 발행 가능" loading="lazy" decoding="async" width="359" height="141">
+        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-06.webp?v=48" alt="세금계산서 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
       </div>
       <div class="benefit-v45-row" aria-label="최대 6개월 무이자 무이자 할부">
-        <img class="benefit-v45-words" src="../assets/benefit-original-text-07.webp?v=45" alt="최대 6개월 무이자 · 무이자 할부" loading="lazy" decoding="async" width="359" height="141">
-        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-07.webp?v=45" alt="최대 6개월 무이자 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
+        <img class="benefit-v45-words" src="../assets/benefit-original-text-07.webp?v=48" alt="최대 6개월 무이자 · 무이자 할부" loading="lazy" decoding="async" width="359" height="141">
+        <img class="benefit-v45-photo" src="../assets/benefit-original-photo-07.webp?v=48" alt="최대 6개월 무이자 기존 실사 이미지" loading="lazy" decoding="async" width="590" height="179">
       </div>
     </div>
     <div class="benefit-contact-image benefit-v45-contact" aria-label="매장 전화·문자 상담 및 주문·결제 안내">
-      <img class="benefit-v45-contact-icon" src="../assets/contact-original-icon.webp?v=45" alt="전화와 문자 상담" loading="lazy" decoding="async" width="455" height="340">
+      <img class="benefit-v45-contact-icon" src="../assets/contact-original-icon.webp?v=48" alt="전화와 문자 상담" loading="lazy" decoding="async" width="455" height="340">
       <div class="benefit-v45-contact-copy">
         <div class="benefit-v45-contact-title">전화 · 문자 상담 및 주문 · 결제 가능</div>
         <div class="benefit-v45-contact-number">매장 문의 051-901-2355</div>
